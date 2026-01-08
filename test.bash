@@ -2,8 +2,11 @@
 # Copyright (c) 2025 Rintarou Matsunaga
 # Licensed under the BSD 3-Clause License.
 
+set -e
+
 source /opt/ros/humble/setup.bash
-cd "$(dirname "$0")/../.."
+
+cd "$(dirname "$0")"
 
 colcon build --symlink-install
 source install/setup.bash
